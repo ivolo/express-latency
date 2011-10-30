@@ -12,7 +12,7 @@ This is an alpha release.
 
 ## Usage:
 
-Enable express-profile by adding the following middleware ***RIGHT BEFORE app.router****:
+Enable express-profile by adding the following middleware ***RIGHT BEFORE app.router***
 ```js
 var profile = require('express-profile');
 
@@ -78,4 +78,4 @@ console.log('Slow middleware code : ' + req.latency[x].info.source);
   - Aggregate latency across requests into the app object
   - Provide a page where page latency can be accessed
   - Add tests :)
-  - Make a (GeckoBoard)[http://geckoboard.com] widget
+  - Make a [GeckoBoard](http://geckoboard.com) widget
