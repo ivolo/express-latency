@@ -1,0 +1,20 @@
+{
+  "author": "Ilya Volodarsky <ivolo@mit.edu>",
+  "name": "express-profile",
+  "description": "Profile route and middleware latency for express.js apps.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/classmetric/express-profile",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/classmetric/express-profile.git"
+  },
+  "main": "./index.js",
+  "engines": {
+    "node": "~0.4.12"
+  },
+  "dependencies": {},
+  "devDependencies": {
+      "connect": "1.4.x",
+      "express": "2.3.x"
+  }
+}
