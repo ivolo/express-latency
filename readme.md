@@ -12,7 +12,7 @@ This is an alpha release.
 
 ## Usage:
 
-Enable express-latency by adding the following middleware after your app decla
+Enable express-latency by adding the following middleware after your app's routes have been declared:
 
 ```js
 var express = require('express');
@@ -45,9 +45,7 @@ req.latency
 ```
 to access it. req.latency is structured like the following:
 ```
-[
 [{"info":{"type":"global-middleware","index":0,"name":""},"done":1320012478268,"duration":0},{"info":{"type":"global-middleware","index":1,"name":"logger"},"done":1320012478268,"duration":0},{"info":{"type":"global-middleware","index":2,"name":"methodOverride"},"done":1320012478268,"duration":0},{"info":{"type":"global-middleware","index":3,"name":"bodyParser"},"done":1320012478268,"duration":0},{"info":{"type":"global-middleware","index":4,"name":"cookieParser"},"done":1320012478269,"duration":1},{"info":{"type":"global-middleware","index":5,"name":"session"},"done":1320012478271,"duration":2},{"info":{"type":"global-middleware","index":6,"name":"processUserAgent"},"done":1320012478272,"duration":1},{"info":{"type":"global-middleware","index":7,"name":"renderArgs"},"done":1320012478272,"duration":0},{"info":{"type":"global-middleware","index":8,"name":"renderArgs"},"done":1320012478272,"duration":0},{"info":{"type":"global-middleware","index":9,"name":""},"done":1320012478272,"duration":0},{"info":{"type":"global-middleware","index":10,"name":""},"done":1320012478272,"duration":0},{"info":{"type":"global-middleware","index":11,"name":"static"},"done":1320012478272,"duration":0},{"info":{"type":"route-middleware","index":0,"path":"/?","method":"get","name":""},"done":1320012478273,"duration":0},{"info":{"type":"route-middleware","index":1,"path":"/?","method":"get","name":"recordRate"},"done":1320012478273,"duration":0},{"info":{"type":"route-middleware","index":2,"path":"/?","method":"get","name":"pageListen"},"done":1320012478273,"duration":0},{"info":{"type":"route-middleware","index":3,"path":"/?","method":"get","name":"pageSender"},"done":1320012478274,"duration":1},{"info":{"type":"route-middleware","index":4,"path":"/?","method":"get","name":"countVisits"},"done":1320012478275,"duration":1},{"info":{"type":"controller","index":0,"path":"/","method":"GET","status":200},"done":1320012478275,"duration":0}]
-]
 ```
 
 ## Options:
