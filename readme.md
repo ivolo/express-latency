@@ -36,12 +36,15 @@ app.use(profile.middleware(app, {print: true}));
 app.use(app.router);
 ```
 express-profile builds the latency object for the request file. Use 
-```js
+```
 req.latency
 ```
 to access it. req.latency is structured like the following:
-```js
-[ {"info":{"type":"Global middleware","middlewareIndex":0},"time":1319953963367} ]
+```
+[
+{"info":{"type":"Global middleware","middlewareIndex":0},"time":1319953963367}, {"info":{"type":"Global middleware","middlewareIndex":1},"time":1319953963369},
+{"info":{"type":"Route middleware and controller"},"time":1319953963378}
+]
 ```
 and if you provide option debug: true, you will also see info property source, which is the source code of that specific middleware. Beware of debug: true and print: true together because you will get a lot of code into standard out!
 
