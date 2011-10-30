@@ -42,8 +42,8 @@ req.latency
 to access it. req.latency is structured like the following:
 ```
 [
-{"info":{"type":"Global middleware","middlewareIndex":0},"time":1319953963367}, {"info":{"type":"Global middleware","middlewareIndex":1},"time":1319953963369},
-{"info":{"type":"Route middleware and controller"},"time":1319953963378}
+{"info":{"type":"Global middleware","middlewareIndex":0},"done":1319953963367}, {"info":{"type":"Global middleware","middlewareIndex":1},"done":1319953963369},
+{"info":{"type":"Route middleware and controller"},"done":1319953963378}
 ]
 ```
 and if you provide option debug: true, you will also see info property source, which is the source code of that specific middleware. Beware of debug: true and print: true together because you will get a lot of code into standard out!
@@ -82,6 +82,7 @@ console.log('Slow middleware code : ' + req.latency[x].info.source);
 ## TO-DOs
 
   - Aggregate latency across requests into the app object
+  - Profile route middleware seperately
   - Provide a page where page latency can be accessed
   - Add tests :)
   - Make a [GeckoBoard](http://geckoboard.com) widget
