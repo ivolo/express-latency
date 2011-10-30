@@ -15,9 +15,11 @@ This is an alpha release.
 Enable express-profile by adding the following middleware ***RIGHT BEFORE app.router***
 
 ```js
+var express = require('express');
 var profile = require('express-profile');
 
 // create express app here 
+var app = express.createServer();
 
 // something, something
 
