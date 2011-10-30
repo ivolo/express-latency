@@ -12,7 +12,8 @@ This is an alpha release.
 
 ## Usage:
 
-Enable express-profile by adding the following middleware ***RIGHT BEFORE app.router***
+Enable express-profile by adding the following middleware 
+
 ```js
 var profile = require('express-profile');
 
