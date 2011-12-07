@@ -3,10 +3,10 @@
   "name": "express-latency",
   "description": "Profile route and middleware latency for express.js apps.",
   "version": "0.0.3",
-  "homepage": "https://github.com/classmetric/express-latency",
+  "homepage": "https://github.com/segmentio/express-latency",
   "repository": {
     "type": "git",
-    "url": "git://github.com/classmetric/express-latency.git"
+    "url": "git://github.com/segmentio/express-latency.git"
   },
   "main": "./index.js",
   "engines": {
