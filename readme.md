@@ -7,7 +7,7 @@ This is an alpha release.
 
 ## Installation
 
-	  $ npm install express-latency
+    $ npm install express-latency
 
 
 ## Usage:
@@ -33,7 +33,7 @@ app.use(app.router);
 
 // add your routes
 app.get('/', function (req, res) {
-	res.send('Measure me!');
+  res.send('Measure me!');
 });
 
 // add it right after all your route definitions
@@ -56,7 +56,15 @@ to access it. req.latency is structured like the following:
 false
 ```
 
-  Logs to console the profile of each request.
+  Logs to console the profile of each controller request.
+
+- *printStatic*
+
+```js
+false
+```
+
+  Logs to console the profile of each static request.
 
 - *setHeaders*
 
